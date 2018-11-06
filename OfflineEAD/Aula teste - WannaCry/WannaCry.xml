@@ -1,0 +1,159 @@
+<aula>
+  <titulo>Do you WannaCry?</titulo>
+  <conteudo>&lt;html&gt;&#xd;
+&#xd;
+&lt;head&gt;&#xd;
+&lt;style&gt;&#xd;
+h1 {&#xd;
+	font-family: sans-serif;&#xd;
+	font-size: 30px;&#xd;
+}&#xd;
+&#xd;
+h2 {&#xd;
+	font-family: sans-serif;&#xd;
+	font-size: 16px;&#xd;
+	font-style: italic;&#xd;
+	font-weight: normal;&#xd;
+	text-align: justify;&#xd;
+	width: 700px;&#xd;
+}&#xd;
+&#xd;
+h3 {&#xd;
+	font-family: sans-serif;&#xd;
+	font-size: 20px;&#xd;
+	font-weight: bold;&#xd;
+	text-align: justify;&#xd;
+	width: 700px;&#xd;
+	margin-top: 35px;&#xd;
+}&#xd;
+&#xd;
+p {&#xd;
+	font-family: sans-serif;&#xd;
+	font-size: 14px;&#xd;
+	text-align: justify;&#xd;
+	text-indent: 0px;&#xd;
+	width: 700px;&#xd;
+	&#xd;
+}&#xd;
+&#xd;
+li {&#xd;
+	font-family: sans-serif;&#xd;
+	font-size: 14px;&#xd;
+	text-align: justify;&#xd;
+	text-indent: 0px;&#xd;
+	width: 660px;&#xd;
+	list-style-position: outside;&#xd;
+}&#xd;
+&#xd;
+img {&#xd;
+	display: block;&#xd;
+    margin-left: auto;&#xd;
+    margin-right: auto;&#xd;
+	margin-top: 10px;&#xd;
+	margin-bottom: 10px;&#xd;
+}&#xd;
+&lt;/style&gt;&#xd;
+&lt;/head&gt;	&#xd;
+&#xd;
+&lt;body&gt;&#xd;
+&lt;h1&gt;Do you WannaCry?&lt;/h1&gt;&#xd;
+&lt;h2&gt;&#xd;
+Quando a Segurança da informação está comprometida, não adiante chorar!&#xd;
+Nesse estudo de caso falaremos do Malware mais impactante do século XXI, o WannaCry.&#xd;
+&lt;/h2&gt;&#xd;
+&#xd;
+&lt;h3&gt; Ramsonwares &lt;/h3&gt;&#xd;
+&lt;p&gt;	&#xd;
+&lt;strong&gt;Ransomwares são Malwares que exploram fragilidades dos SOs ou uso inseguro para infectar (silenciosamente) um sistema.&lt;/strong&gt; &#xd;
+A partir de um gatilho programado (ex: data e hora específicas) criptografam os arquivos do computador e exigem resgate para realizar a descriptografia dos dados.	&#xd;
+&lt;/p&gt;&#xd;
+&lt;p&gt;&#xd;
+A autoria desse Ransomware é desconhecida.&#xd;
+Explora uma vulnerabilidade dos Sistemas Windows (a mesma largamente explorada pela NSA e, provavelmente, por outros órgãos)&#xd;
+Seu gatilho para criptografar os dados foi em 12/05/2017, mas se espalhava entre máquinas a meses.&#xd;
+Em março de 2017(dois meses antes do ataque) a Microsoft liberou um patch de segurança corrigindo essa falha (após Exploit divulgado pelo grupo Shadow Brokers), entretanto, um enorme número de computadores (incluindo máquinas de empresas) não realizam a atualização.&#xd;
+Após o ataque, há uma “corrida” de usuários em busca de atualizações de segurança do windows e aplicativos antimalwares.&#xd;
+&lt;/p&gt;&#xd;
+&lt;p&gt;&#xd;
+Esta imagem mostra a abrangência da infecção do WannaCry até o dia 15/05/2017:&#xd;
+&lt;/p&gt;&#xd;
+&lt;img src = &quot;imagens/Screenshot_2.png&quot; width = &quot;450&quot; height = &quot;260&quot;&gt;&#xd;
+&lt;p&gt;&#xd;
+O WannaCry se espalha de dois modos: Em arquivo malicioso anexo em Emails ou pela propagação entre máquinas interconectadas sem as devidas medidas de segurança.&#xd;
+Em máquinas infectadas, o vírus exige pagamento de resgate em Bitcoins para que os dados fossem descriptografados.&#xd;
+Os valores pedidos pelo resgate aumentar com o decorrer do tempo.&#xd;
+O vírus ameaça que os dados serão permanentemente criptografados após 7 dias.&#xd;
+&lt;/p&gt;&#xd;
+&lt;h3&gt;Programa WannaCry&lt;/h3&gt;&#xd;
+&lt;p&gt;&#xd;
+Quando um computador é infectado, o plano de fundo da área de trabalho é alterado para uma imagem que diz que o computador está infectado e dá instruções do que fazer a seguir.&#xd;
+O programa do WannaCry é executado com o sistema operacional, e sua tela é a seguinte:&#xd;
+&lt;img src = &quot;imagens/Screenshot_1.png&quot; width = &quot;450&quot; height = &quot;260&quot;&gt;&#xd;
+&lt;/p&gt;&#xd;
+&lt;p&gt;&#xd;
+O WannaCry basicamente criptografa todos os arquivos do computador com extensões conhecidas, colocando nesses arquivos a extensão WCRY.&#xd;
+&lt;/p&gt;&#xd;
+&lt;h3&gt;Boas práticas para prevenção&lt;/h3&gt;&#xd;
+&lt;ul&gt;&#xd;
+&lt;li&gt;Permitir o uso de portas de compartilhamento (portas SMB 139 e 445) apenas quando realmente necessário e somente para máquinas interligadas na mesma rede;&lt;/li&gt;&#xd;
+&lt;li&gt;Manter uma política rígida para E-mails (em especial com anexos) em ambientes corporativos;&lt;/li&gt;&#xd;
+&lt;li&gt;Utilizar somente sistemas operacionais com suporte ativo (versões mais recentes/LTS); &lt;/li&gt;&#xd;
+&lt;li&gt;Garantir que está com a mais recente atualização de segurança do SO; &lt;/li&gt;&#xd;
+&lt;li&gt;Utilizar um bom antivírus em sua versão mais atual para proteção de vulnerabilidades D+0 (vulnerabilidades recém exploitadas, ainda sem correção por atualização de segurança); &lt;/li&gt;&#xd;
+&lt;li&gt;Utilizar técnicas de navegação segura; &lt;/li&gt;&#xd;
+&lt;li&gt;Permitir a usuários do sistema a navegação somente em sites pertencentes a lista de confiáveis; &lt;/li&gt;&#xd;
+&lt;li&gt;Não permitir a maioria dos usuários permissões especiais ao sistema. &lt;/li&gt;&#xd;
+&lt;li&gt;Manter backup atualizado e fisicamente separado de todos os documentos importantes; &lt;/li&gt;&#xd;
+&lt;li&gt;Isolar da rede toda máquina que esteja ou aparente estar contaminada para verificação e tratamento necessário (que pode variar de varredura por antivírus a restauração do sistema); &lt;/li&gt;&#xd;
+&lt;/ul&gt;&#xd;
+&lt;h3&gt;Considerações finais&lt;/h3&gt;&#xd;
+&lt;p&gt;&#xd;
+Ransomwares não são ameaças recentes, entretanto o grande impacto do WannaCry (que embora não tenha faturado com resgates valores proporcionais ao alarde causado) servirá de incentivo a criminosos virtuais para o desenvolvimento de malwares semelhantes, explorando toda e qualquer vulnerabilidade de SO ou uso inseguro do sistema.&#xd;
+As políticas de segurança das instituições devem contemplar ações de prevenção a malwares, contemplando as particularidades de Ransomwares; Os planos de continuidade devem prever formas de lidar com eventuais ransomwares, garantindo a continuidade da operação SEM A REALIZAÇÃO DE PAGAMENTOS DE RESGATE DE DADOS.&#xd;
+NUNCA PAGUE RESGATES!&#xd;
+As instituições e usuários domésticos devem aprender e divulgar formas de prevenção. Pagamentos de resgates servem como incentivo ao desenvolvimento de novos ransomwares. &#xd;
+&lt;/p&gt;&#xd;
+&#xd;
+&#xd;
+&lt;/body&gt;&#xd;
+&lt;/html&gt;</conteudo>
+  <anotacoes>Anotação.
+Anotação 02.</anotacoes>
+  <duvidas>Dúvida.
+Dúvida 02.</duvidas>
+  <atividades>
+    <dissertativa>
+      <titulo>Pergunta 1</titulo>
+      <enunciado>Defina, com suas palavras, o que é um Ramsomware.</enunciado>
+      <resposta> </resposta>
+    </dissertativa>
+    <multiplaEscolha>
+      <titulo>Pergunta 2</titulo>
+      <enunciado>Qual a resposta correta:</enunciado>
+      <opcoes>
+        <string>Sistemas Operacionais sem as atualizações mais recentes são mais vulneráveis a ataques.</string>
+        <string>O ramsomware WannaCry não poderia ser evitado mesmo que as atualizações do sistema estivessem em dia.</string>
+        <string>O WannaCry afetou tanto computadores com sistemas Windows quanto Linux.</string>
+        <string>Todas as grandes empresas globais não foram afetadas pelo malware porque mantiam seus sistemas sempre atualizados.</string>
+        <string>A vulnerabilidade explorada pelo WannaCry não pode ser corrigida pelos criadores do sistema operacional.</string>
+      </opcoes>
+      <opcaoSelecionada>Sistemas Operacionais sem as atualizações mais recentes são mais vulneráveis a ataques.</opcaoSelecionada>
+    </multiplaEscolha>
+    <multiResposta>
+      <titulo>Pergunta 3</titulo>
+      <enunciado>Marque todas as opções incorretas:</enunciado>
+      <opcoes>
+        <string>Sistemas Operacionais sem as atualizações mais recentes são mais vulneráveis a ataques.</string>
+        <string>O ramsomware WannaCry não poderia ser evitado mesmo que as atualizações do sistema estivessem em dia.</string>
+        <string>O WannaCry afetou tanto computadores com sistemas Windows quanto Linux.</string>
+        <string>Todas as grandes empresas globais não foram afetadas pelo malware porque mantiam seus sistemas sempre atualizados.</string>
+        <string>A vulnerabilidade explorada pelo WannaCry foi corrigida criadores do sistema operacional.</string>
+      </opcoes>
+      <opcoesSelecionadas>
+        <string>O ramsomware WannaCry não poderia ser evitado mesmo que as atualizações do sistema estivessem em dia.</string>
+        <string>O WannaCry afetou tanto computadores com sistemas Windows quanto Linux.</string>
+        <string>Todas as grandes empresas globais não foram afetadas pelo malware porque mantiam seus sistemas sempre atualizados.</string>
+      </opcoesSelecionadas>
+    </multiResposta>
+  </atividades>
+</aula>
